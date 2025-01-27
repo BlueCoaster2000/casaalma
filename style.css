@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #6141ac;
+  color: #fff;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header img {
+  max-width: 300px; /* Aumenta el tamaño máximo */
+  width: 100%; /* Hace que sea responsive */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-left: 1rem;
+}
+header h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  header img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+nav a {
+  color: #386fe4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1a5cb1;
+}
+
+.hero {
+  background: url("https://via.placeholder.com/1200x400") center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.service {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.service h3 {
+  margin: 0.5rem 0;
+}
+
+footer {
+  background: #386fe4;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+.iglogo {
+  width: 4em;
+}
+.iglogo:hover {
+  width: 6em;
+}
+.image-container {
+  width: 200px; /* Ajusta el tamaño inicial de la imagen */
+  overflow: hidden;
+  border-radius: 10px; /* Opcional, bordes redondeados */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover {
+  transform: scale(1.1); /* Agranda el contenedor ligeramente */
+}
+
+.image-container:hover img {
+  transform: scale(1.2); /* Aumenta el zoom de la imagen */
+}
+
+.responsive-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  flex-wrap: wrap; /* Permite que los elementos se apilen en pantallas pequeñas */
+  text-align: left;
+}
+
+.responsive-img {
+  width: 60%; /* Imagen ocupa el 40% del contenedor */
+  max-width: 8 00px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.responsive-text {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .responsive-container {
+    flex-direction: column; /* Apila la imagen y el texto */
+    text-align: center;
+  }
+
+  .responsive-img,
+  .responsive-text {
+    width: 100%; /* Imagen y texto ocupan todo el ancho disponible */
+  }
+}
+
+.parallax {
+  background: url("./paralax.png") center/contain no-repeat;
+  height: 100vh; /* Hace que ocupe toda la altura visible del navegador */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  position: relative;
+  background-attachment: fixed; /* Efecto parallax */
+}
+body {
+  background-color: #e2ebf2;
+}
